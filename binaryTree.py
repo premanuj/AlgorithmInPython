@@ -9,10 +9,13 @@ class BinaryTree():
 
     def getLeftChild(self):
         return self.left
+
     def getRightChild(self):
         return self.right
+
     def setNodeValue(self, value):
         self.rootid = value
+        
     def getNodeValue(self):
         return self.rootid
 
