@@ -4,12 +4,12 @@ Implementation of selection sort using python
 """
 
 def selection_sort(collection):
-    length = len(collection)
+    size = len(collection)
 
-    for i in range(length-1):
+    for i in range(size-1):
         least = i
-        for j in range(i+1, length):
-            if collection[j] == collection[least]:
+        for j in range(i+1, size):
+            if collection[j] <= collection[least]:
                 least = j
         collection[least], collection[i] = collection[i], collection[least]
     return collection
